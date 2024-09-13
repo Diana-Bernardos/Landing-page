@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, #005f56, #00a884, #00d4a3);
+   
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav .logo {
+    width: 60px;
+    height: auto;    
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius:50%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero span {
+    color: #ff6347;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55335;
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+
+
+.main-content {
+    background: url('https://www.tecnologiadigital.com/tech-background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+   
+}
+
+.about-section h2, .projects-section h2, .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.project {
+    margin-bottom: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.project img {
+    width: 150px; /* Tamaño más pequeño y proporcionado */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #FF5722; /* Naranja vibrante para los botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19; /* Hover en naranja más oscuro */
+}
+.back-to-top {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius:100px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
+
+.main-footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+
+
+  
+  
+  
+  

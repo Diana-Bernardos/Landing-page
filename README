@@ -1,0 +1,26 @@
+# Portfolio Landing Page
+
+Bienvenido a mi landing page de portfolio personal. Esta página web está diseñada para mostrar mis proyectos y habilidades como desarrolladora web y diseñadora creativo. Está construida con HTML, CSS y JavaScript, y presenta un diseño limpio y moderno con animaciones sutiles para una experiencia más interactiva.
+
+## Características
+
+- **Diseño Responsive**: La página es completamente adaptable a diferentes tamaños de pantalla, desde móviles hasta escritorios.
+- **Animaciones**: Incluye efectos de aparición de los elementos cuando haces scroll, y un desplazamiento suave al navegar entre secciones.
+
+- **Secciones Clave**:
+  - **Sobre mí**: Una introducción sobre quién soy mis inquietudes y qué hago.
+  - **Proyectos**: Una galería de los proyectos más destacados que he realizado.
+  - **Contacto**: Un formulario simple para que los visitantes me envíen mensajes directamente.
+
+## Tecnologías Usadas
+
+- **HTML5**: Estructura semántica y accesible.
+- **CSS3**: Estilos modernos, utilizando Flexbox y Grid para el diseño responsivo.
+- **JavaScript**: Se agregó interactividad como el desplazamiento suave y las animaciones de aparición.
+- **Google Fonts**: Se usa la fuente "Poppins" para darle un aspecto limpio y profesional al texto.
+
+## Instrucciones de Uso
+
+1. **Clonar el Repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/portfolio-landing-page.git
