@@ -1,0 +1,15 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Bienvenido a mi landing page de portfolio personal. Esta página web está diseñada para mostrar mis proyectos y habilidades como desarrolladora web y diseñadora creativo. Está construida con HTML, CSS y JavaScript, y presenta un diseño limpio y moderno con animaciones sutiles para una experiencia más interactiva.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0"
+  }
+}
