@@ -1,13 +1,13 @@
 /* Estilos generales para las páginas de Proyectos y Sobre mí */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f1faee; /* Blanco Hueso */
+    color: #3d3d3d; /* Gris Profundo */
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to right, #d4a5a5, #a98787); /* Tonos pastel suaves y elegantes */
+    background: linear-gradient(to right, #a8dadc, #ff6b6b); /* Celeste Pastel a Coral Suave */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -22,29 +22,69 @@ section {
     padding: 40px 20px;
     margin: 20px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajustes de diseño tipo 'Masonry' para la galería de proyectos */
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
 }
 
 .project {
-    flex: 1 1 calc(30% - 20px);
-    cursor: pointer;
-    transition: transform 0.3s;
-    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
     width: 100%;
-    border-radius:30px;
-    transition: transform 0.3s;
+    max-height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Título y Descripción del Proyecto */
+.project .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Ajustes de tamaño de texto */
+.project .project-info h3 {
+    margin: 0;
+    font-size: 1.1rem; /* Tamaño más pequeño para evitar corte */
+    white-space: wrap;/* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow:ellipsis; /* Muestra '...' si el texto es muy largo */
+}
+
+.project .project-info p {
+    margin: 5px 0 0;
+    font-size: 0.85rem; /* Reducir tamaño para que quepa bien */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muestra '...' si el texto es muy largo */
+}
+
+/* Mostrar el título y descripción cuando se hace hover */
+.project:hover .project-info {
+    opacity: 1;
 }
 
 .project:hover {
@@ -55,6 +95,11 @@ section {
     transform: scale(1.05);
 }
 
+.world-image{
+    border-radius:50%;
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
@@ -63,7 +108,7 @@ footer {
 }
 
 footer a {
-    color: #9f7b9f; /* Color pastel elegante */
+    color: #ff6b6b; /* Coral Suave */
     text-decoration: none;
 }
 
@@ -73,13 +118,27 @@ footer a:hover {
 
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
-    .project {
-        flex: 1 1 calc(45% - 20px);
+    .project-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .project {
-        flex: 1 1 100%;
+    .project-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    /* Ajuste de tamaño de texto en dispositivos pequeños */
+    .project .project-info h3 {
+        font-size: 1rem;
+    }
+
+    .project .project-info p {
+        font-size: 0.75rem;
     }
 }
+
+
+
+
+
