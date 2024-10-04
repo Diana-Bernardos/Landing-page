@@ -3,9 +3,10 @@ const themeIcon = document.getElementById('theme-icon');
 const menuButton = document.querySelector('.menu-button');
 const dropdown = document.querySelector('.dropdown');
 
-menuButton.addEventListener('click', () => {
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-});
+function toggleMenu() {
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('show');
+}
 
 // Al hacer clic en el botón de tema
 themeButton.addEventListener('click', () => {

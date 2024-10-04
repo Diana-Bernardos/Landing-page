@@ -7,8 +7,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1D3557, #A8DADC); /* Degradado de azul oscuro a celeste pastel */
-    color: #3D3D3D; /* Texto en gris profundo */
+    background-color: #03192F; /* Azul Oscuro */
+    color: #FFFFFF; /* Blanco */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,31 +18,13 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: CENTER;
     align-items: center;
     padding: 20px;
     width: 100%;
-    background-color: #F1FAEE; /* Blanco hueso */
-}
-
-.theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#theme-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
-    transition: color 0.3s ease;
-}
-
-#theme-button:hover {
-    color: #FF6B6B; /* Coral suave */
+    background-color: #03192F; /* Azul Oscuro */
+    color: #FFFFFF; /* Blanco */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 .profile-section {
@@ -54,14 +36,16 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #FF6B6B; /* Coral suave */
+    border: 4px solid #a54d4d; /* Coral Suave */
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 h2 {
     font-size: 1.5rem;
-    color: #1D3557; /* Azul oscuro */
+    color: #FFFFFF; /* Blanco */
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .links-section {
@@ -73,8 +57,8 @@ h2 {
 }
 
 .link-btn {
-    background-color: #FF6B6B; /* Coral suave */
-    color: white;
+    background-color: #a54d4d; /* Coral Suave */
+    color: #FFFFFF; /* Blanco */
     padding: 15px;
     border-radius: 30px;
     text-decoration: none;
@@ -82,20 +66,30 @@ h2 {
     text-align: center;
 }
 
+.links{
+    color: #FFFFFF; /* Blanco */
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; 
+}
+
 .link-btn:hover {
-    background-color: #A8DADC; /* Cambia a celeste pastel en hover */
+    background-color: #FFFFFF; /* Blanco en hover */
+    color: #03192F; /* Azul Oscuro en hover */
     transform: translateY(-5px); /* Efecto hover dinámico */
 }
 
 footer {
-    color: #3D3D3D; /* Gris profundo */
+    color: #FFFFFF; /* Blanco */
     padding: 20px;
     text-align: center;
     font-size: 20px;
 }
 
 footer a {
-    color: #FF6B6B; /* Coral suave */
+    color: #a54d4d; /* Coral Suave */
     text-decoration: none;
 }
 
@@ -103,16 +97,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Menú desplegable */
+/* Menú hamburguesa */
 .menu {
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
 }
 
 .menu-button {
-    background-color: #1D3557;
-    color: white;
+     /* Coral Suave */
+    color: #FFFFFF; /* Blanco */
     border: none;
     padding: 10px 30px;
     border-radius: 8px;
@@ -121,19 +115,21 @@ footer a:hover {
 }
 
 .menu-button:hover {
-    background-color: #FF6B6B;
+    background-color: #FFFFFF; /* Blanco en hover */
+    color: #03192F; /* Azul Oscuro en hover */
 }
 
 .dropdown {
     display: none;
     position: absolute;
     border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
     z-index: 1;
+    background-color: #03192F; /* Azul Oscuro */
 }
 
 .dropdown a {
-    color: #1D3557;
+    color: #FFFFFF; /* Blanco */
     padding: 5px;
     text-decoration: none;
     display: block;
@@ -141,13 +137,24 @@ footer a:hover {
 }
 
 .dropdown a:hover {
-    background-color: #FF6B6B;
+     /* Coral Suave */
+    color: #FFFFFF; /* Blanco */
 }
 
-/* Mostrar menú al hacer hover */
+/* Mostrar menú al hacer click */
 .menu:hover .dropdown {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
