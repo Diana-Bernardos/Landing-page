@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #03192F; /* Azul Oscuro */
+    background-color: #7e8184; /* Azul Oscuro */
     color: #FFFFFF; /* Blanco */
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 20px;
     width: 100%;
-    background-color: #03192F; /* Azul Oscuro */
+     /* Azul Oscuro */
     color: #FFFFFF; /* Blanco */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
