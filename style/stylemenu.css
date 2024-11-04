@@ -1,13 +1,13 @@
 /* Estilos generales para las páginas de Proyectos y Sobre mí */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #54575b; /* Azul Oscuro */
+    background-color: #FAEDCD; /* Azul Oscuro */
     color: #FFFFFF; /* Blanco */
     line-height: 1.6;
 }
 
 header {
-    background-color: #54575b; /* Azul Oscuro */
+    background-color: #D4A373; /* Azul Oscuro */
     color: #FFFFFF; /* Blanco */
     padding: 20px;
     text-align: center;
@@ -23,7 +23,7 @@ section {
     padding: 40px 20px;
     margin: 20px;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    background-color: #E9EDC9(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
@@ -40,7 +40,7 @@ section {
     transition: transform 0.3s ease-in-out;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px #E9EDC9(255, 255, 255, 0.1);
 }
 
 .project img {
@@ -57,7 +57,7 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    background-color: #FAEDCD(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
     color: #FFFFFF; /* Blanco */
     padding: 15px;
     text-align: left;
